@@ -1,8 +1,8 @@
 <template>
     <div class="relative pb-4">
-        <label :for="name" class="text-blue-500 text-xs pt-2 uppercase font-bold absolute"> {{ label }}</label>
+        <label :for="name" class="text-red-500 text-xs pt-2 uppercase font-bold absolute"> {{ label }}</label>
         <input type="text" :id="name"
-               class="pt-8 text-gray-900 w-full border-b pb-2 focus:outline-none focus:border-blue-400"
+               class="pt-8 text-gray-900 w-full border-b pb-2 focus:outline-none focus:border-red-400"
                :placeholder="placeholder" :class="errorClassObject()" v-model="value" @input="update()">
         <p class="text-red-700 text-xs" v-text="errorMessage()"></p>
     </div>

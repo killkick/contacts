@@ -3,14 +3,14 @@
     <div v-if="loading">loading</div>
     <div v-else>
         <div class="flex justify-between">
-            <a href="#" class="text-blue-400" @click="$router.back()">
+            <a href="#" class="text-red-400" @click="$router.back()">
                 < Back
             </a>
             <div class="relative">
                 <router-link :to="'/contacts/' +  contact.contact_id + '/edit'"
                              class="px-4 py-2 rounded text-sm text-green-500 border-green-500 border font-bold mr-2">Edit</router-link>
                 <a class="px-4 py-2 border-red-500 border rounded text-sm font-bold text-red-500" href="" @click.prevent="modal = !modal">Delete</a>
-                <div class="absolute bg-blue-800 text-white w-64 rounded rounded-lg py-5 px-4 right-0 py-2 z-20" v-if="modal">
+                <div class="absolute bg-red-800 text-white w-64 rounded rounded-lg py-5 px-4 right-0 py-2 z-20" v-if="modal">
                   <p class="px-4 py-2">
                       Are you sure to delete this contact?
                   </p>
@@ -28,11 +28,11 @@
             <p class="pl-5 text-xl">{{ contact.name }}</p>
         </div>
         <p  class="pt-6 text-gray-600 font-bold uppercase font-sm">Contact</p>
-        <p class="pt-2 text-blue-400">{{contact.email }}</p>
+        <p class="pt-2 text-red-400">{{contact.email }}</p>
         <p  class="pt-6 text-gray-600 font-bold uppercase font-sm">Company</p>
-        <p class="pt-2 text-blue-400">{{contact.company }}</p>
+        <p class="pt-2 text-red-400">{{contact.company }}</p>
         <p class="pt-6 text-gray-600 font-bold uppercase font-sm">Birthday</p>
-        <p class="pt-2 text-blue-400">{{contact.birthday }}</p>
+        <p class="pt-2 text-red-400">{{contact.birthday }}</p>
     </div>
 </div>
 </template>

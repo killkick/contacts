@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>
-            <a href="#" class="text-blue-400" @click="$router.back()">
+            <a href="#" class="text-red-400" @click="$router.back()">
                 < Back
             </a>
         </div>
@@ -12,7 +12,7 @@
             <input-field name="birthday" :errors="errors" label="Contact birthday"placeholder="MM/DD/YY" @updateInput="form.birthday = $event" :watchDate="form.birthday" ></input-field>
             <div class="flex justify-end">
 
-                <button class="bg-blue-500 py-2 px-4 rounded text-white hover:bg-blue-400" >Edit</button>
+                <button class="bg-red-500 py-2 px-4 rounded text-white hover:bg-red-400" >Edit</button>
             </div>
         </form>
     </div>
